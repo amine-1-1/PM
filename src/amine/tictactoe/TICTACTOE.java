@@ -224,15 +224,15 @@ public void stop() {
     		help.add(about2);
     		JMenuItem how =new JMenu("how to play");
     		menubar.add(how);
-    		JMenuItem h1 =new JMenuItem("classic");
-    		JMenuItem h2 =new JMenuItem("SUPER");
+    		JMenuItem h2 =new JMenuItem("classic");
+    		JMenuItem h1 =new JMenuItem("Super");
     	    how.add(h1);
     	    how.add(h2);
     	    exit.addActionListener(new exitaction());
     	    about1.addActionListener(new abouting1());
     	    about2.addActionListener(new abouting2());
-    		h1.addActionListener(new howing1());
-    		h2.addActionListener(new howing2());
+    		h1.addActionListener(new how1());
+    		h2.addActionListener(new how2());
     		play.addActionListener(new playing());
     	}
     	class exitaction implements ActionListener{
@@ -250,7 +250,7 @@ public void stop() {
 	    		 JLabel l1,l2;  
 	    		    l1=new JLabel(html);  
 	    		    l1.setBounds(1,1, 500,50);
-	    		    l1.setFont(new Font("Serif", Font.BOLD, 20));
+	    		    l1.setFont(new Font("Serif", Font.BOLD, 17));
 	    		 
 	    		    f.add(l1);   
 	    		    f.setSize(300,300);  
@@ -276,8 +276,8 @@ public void stop() {
 	    	 }
 	    	 
 	     }
-    	class howing2 implements ActionListener{
-    		JFrame f= new JFrame("CLassic"); 
+    	class how2 implements ActionListener{
+    		JFrame f= new JFrame("Super"); 
     		String html = "<html>" + "Tic-tac-toe wo players, X and O" + "<br />" + 
     				"who take turns marking the spaces in a 3×3 grid" +"</br>"+
     				" The player who succeeds in placing three of their marks"+"</br>"+
@@ -286,7 +286,7 @@ public void stop() {
 	    	 public void actionPerformed (ActionEvent e) {
 	    		 JLabel l1;  
 	    		 l1=new JLabel(html);  
-	    		 l1.setFont(new Font("Serif", Font.BOLD, 15));
+	    		 l1.setFont(new Font("Serif", Font.BOLD, 12));
 	    		    l1.setBounds(1,1, 500,50);
 	    		    f.add(l1);   
 	    		    f.setSize(300,300);  
@@ -296,19 +296,19 @@ public void stop() {
 	    	 }
 	    	 
 	     }
-    	class howing1 implements ActionListener{
-    		JFrame f= new JFrame("SUPER"); 
-    		String html = "<html>" + "Tic-tac-toe wo players, X and O" + "<br />" + 
+    	class how1 implements ActionListener{
+    		JFrame f= new JFrame("Classic"); 
+    		String html = "<html>" + "Tic-tac-toe Super two players, X and O" + "<br />" + 
     				"who take turns marking the spaces in a 9×9 grid" +"</br>"+
-    				" The player playes in diffrent spaces but there"+"</br>"+
-    				" is one purticulere place where if one of the players win "+"</br>"+
-    				" that space(3*3) wins the game the joker space  "+"</html>";
+    				" The player playes in diffrent spacesand the one how win 5/9 of the spaces winnes  "+"</br>"+
+    				"  but there is one purticular place where if one of the players wins it "+"</br>"+
+    				"  wins the game the joker space  "+"</html>";
 	    	 public void actionPerformed (ActionEvent e) {
 	    		   
 	    		 JLabel l1;  
 	    		 l1=new JLabel(html);
-	    		 l1.setFont(new Font("Serif", Font.BOLD, 10));
-	    		    l1.setBounds(1,1, 500,55);
+	    		 l1.setFont(new Font("Serif", Font.BOLD, 12));
+	    		    l1.setBounds(1,1, 500,65);
 	    		    f.add(l1);      
 	    		    f.setSize(350,350);  
 	    		    f.setLocationRelativeTo(null); 
