@@ -128,7 +128,7 @@ public class Game {
 		String winner="";
 		if(turn ==1) winner ="player 1 wins" ;
 		if(turn ==2) winner ="player 2 wins" ;
-		if(turn ==0) winner ="it's a Fucking tie" ;
+		if(turn ==0) winner ="it's a  tie" ;
 		
 		//setImage(new GreenfootImage("Game Over", 48, Color.WHITE, Color.BLACK));
 		try {

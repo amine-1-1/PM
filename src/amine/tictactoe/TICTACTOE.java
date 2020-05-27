@@ -299,10 +299,10 @@ public void stop() {
     	class howing1 implements ActionListener{
     		JFrame f= new JFrame("SUPER"); 
     		String html = "<html>" + "Tic-tac-toe wo players, X and O" + "<br />" + 
-    				"who take turns marking the spaces in a 3×3 grid" +"</br>"+
-    				" The player who succeeds in placing three of their marks"+"</br>"+
-    				" in a horizontal, vertical, or diagonal row "+"</br>"+
-    				" is the winner "+"</html>";
+    				"who take turns marking the spaces in a 9×9 grid" +"</br>"+
+    				" The player playes in diffrent spaces but there"+"</br>"+
+    				" is one purticulere place where if one of the players win "+"</br>"+
+    				" that space(3*3) wins the game the joker space  "+"</html>";
 	    	 public void actionPerformed (ActionEvent e) {
 	    		   
 	    		 JLabel l1;  
